@@ -18,6 +18,7 @@ namespace MVC_part1.Models
         public DbSet<Centre> Centres { set; get; }
         public DbSet<Medicine> Medicines { set; get; }
         public DbSet<MedicineOrder> MedicineOrders { set; get; }
+        public DbSet<Doctor> Doctors { set; get; } 
         //   public DbSet<Disease> Diseases { set; get; }
     }
 }

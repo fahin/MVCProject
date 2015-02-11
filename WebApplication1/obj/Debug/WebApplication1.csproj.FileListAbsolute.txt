@@ -202,3 +202,37 @@ H:\BiTM_BASIS\MVC-Project\07-Update\WebApplication1\WebApplication1\obj\Debug\We
 H:\BiTM_BASIS\MVC-Project\07-Update\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
 H:\BiTM_BASIS\MVC-Project\07-Update\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreateMedicine.resources
 H:\BiTM_BASIS\MVC-Project\07-Update\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Migrations.InitialCreaorders.resources
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\WebApplication1.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\EntityFramework.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\WebGrease.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\EntityFramework.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.Migrations.firstStep.resources
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.Migrations.secondStep.resources
+C:\Users\ACID\Desktop\New folder\MVCProject\WebApplication1\obj\Debug\WebApplication1.Migrations.thiredStep.resources
