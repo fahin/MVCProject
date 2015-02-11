@@ -11,108 +11,107 @@ using MVC_part1.Models;
 
 namespace WebApplication1.Controllers
 {
-    public class ThanaController : Controller
+    public class DoctorController : Controller
     {
         private StudentGatewayDB db = new StudentGatewayDB();
 
-        // GET: /Thana/
+        // GET: /Doctor/
         public ActionResult Index()
         {
-            return View(db.Thanas.ToList());
+            return View(db.Doctors.ToList());
         }
 
-        // GET: /Thana/Details/5
+        // GET: /Doctor/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Thana thana = db.Thanas.Find(id);
-            if (thana == null)
+            Doctor doctor = db.Doctors.Find(id);
+            if (doctor == null)
             {
                 return HttpNotFound();
             }
-            return View(thana);
+            return View(doctor);
         }
 
-        // GET: /Thana/Create
+        // GET: /Doctor/Create
         public ActionResult Create()
         {
-            ViewBag.DistrictID = new SelectList(db.Districts, "DistrictID", "Name");
             return View();
         }
 
-        // POST: /Thana/Create
+        // POST: /Doctor/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="ThanaID,Name,DistrictID")] Thana thana)
+        public ActionResult Create([Bind(Include="DoctorID,Name,Degree,Specialization")] Doctor doctor)
         {
             if (ModelState.IsValid)
             {
-                db.Thanas.Add(thana);
+                db.Doctors.Add(doctor);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(thana);
+            return View(doctor);
         }
 
-        // GET: /Thana/Edit/5
+        // GET: /Doctor/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Thana thana = db.Thanas.Find(id);
-            if (thana == null)
+            Doctor doctor = db.Doctors.Find(id);
+            if (doctor == null)
             {
                 return HttpNotFound();
             }
-            return View(thana);
+            return View(doctor);
         }
 
-        // POST: /Thana/Edit/5
+        // POST: /Doctor/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="ThanaID,Name,DistrictID")] Thana thana)
+        public ActionResult Edit([Bind(Include="DoctorID,Name,Degree,Specialization")] Doctor doctor)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(thana).State = EntityState.Modified;
+                db.Entry(doctor).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(thana);
+            return View(doctor);
         }
 
-        // GET: /Thana/Delete/5
+        // GET: /Doctor/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Thana thana = db.Thanas.Find(id);
-            if (thana == null)
+            Doctor doctor = db.Doctors.Find(id);
+            if (doctor == null)
             {
                 return HttpNotFound();
             }
-            return View(thana);
+            return View(doctor);
         }
 
-        // POST: /Thana/Delete/5
+        // POST: /Doctor/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Thana thana = db.Thanas.Find(id);
-            db.Thanas.Remove(thana);
+            Doctor doctor = db.Doctors.Find(id);
+            db.Doctors.Remove(doctor);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -124,19 +123,6 @@ namespace WebApplication1.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        public JsonResult ExisThana(string name)
-        {
-            var aThana = db.Thanas.FirstOrDefault(x => x.Name == name);
-            if (aThana != null)
-            {
-                return Json(false, JsonRequestBehavior.AllowGet);
-            }
-            else
-            {
-                return Json(true, JsonRequestBehavior.AllowGet);
-            }
         }
     }
 }

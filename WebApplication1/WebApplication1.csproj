@@ -120,27 +120,29 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CentreController.cs" />
     <Compile Include="Controllers\DistrictController.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedicineController.cs" />
     <Compile Include="Controllers\ThanaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201502082159339_InitialCreate.cs" />
-    <Compile Include="Migrations\201502082159339_InitialCreate.Designer.cs">
-      <DependentUpon>201502082159339_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201502110232572_firstStep.cs" />
+    <Compile Include="Migrations\201502110232572_firstStep.Designer.cs">
+      <DependentUpon>201502110232572_firstStep.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201502090715156_InitialCreateMedicine.cs" />
-    <Compile Include="Migrations\201502090715156_InitialCreateMedicine.Designer.cs">
-      <DependentUpon>201502090715156_InitialCreateMedicine.cs</DependentUpon>
+    <Compile Include="Migrations\201502110322339_secondStep.cs" />
+    <Compile Include="Migrations\201502110322339_secondStep.Designer.cs">
+      <DependentUpon>201502110322339_secondStep.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201502100823192_InitialCreaorders.cs" />
-    <Compile Include="Migrations\201502100823192_InitialCreaorders.Designer.cs">
-      <DependentUpon>201502100823192_InitialCreaorders.cs</DependentUpon>
+    <Compile Include="Migrations\201502110343028_thiredStep.cs" />
+    <Compile Include="Migrations\201502110343028_thiredStep.Designer.cs">
+      <DependentUpon>201502110343028_thiredStep.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Centre.cs" />
     <Compile Include="Models\District.cs" />
+    <Compile Include="Models\Doctor.cs" />
     <Compile Include="Models\JsonArray.cs" />
     <Compile Include="Models\Medicine.cs" />
     <Compile Include="Models\MedicineOrder.cs" />
@@ -217,6 +219,11 @@
     <Content Include="Views\Medicine\Index.cshtml" />
     <Content Include="Views\Medicine\MedicineSetup.cshtml" />
     <Content Include="Views\Centre\Treatment.cshtml" />
+    <Content Include="Views\Doctor\Create.cshtml" />
+    <Content Include="Views\Doctor\Delete.cshtml" />
+    <Content Include="Views\Doctor\Details.cshtml" />
+    <Content Include="Views\Doctor\Edit.cshtml" />
+    <Content Include="Views\Doctor\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,18 +236,18 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201502082159339_InitialCreate.resx">
-      <DependentUpon>201502082159339_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201502090715156_InitialCreateMedicine.resx">
-      <DependentUpon>201502090715156_InitialCreateMedicine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201502100823192_InitialCreaorders.resx">
-      <DependentUpon>201502100823192_InitialCreaorders.cs</DependentUpon>
-    </EmbeddedResource>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <EmbeddedResource Include="Migrations\201502110232572_firstStep.resx">
+      <DependentUpon>201502110232572_firstStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502110322339_secondStep.resx">
+      <DependentUpon>201502110322339_secondStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502110343028_thiredStep.resx">
+      <DependentUpon>201502110343028_thiredStep.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

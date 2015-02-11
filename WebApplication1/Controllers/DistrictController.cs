@@ -124,5 +124,18 @@ namespace WebApplication1.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public JsonResult ExisDistrict(string name)
+        {
+            var aDistrict = db.Districts.FirstOrDefault(x => x.Name == name);
+            if (aDistrict != null)
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+        }
     }
 }

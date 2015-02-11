@@ -227,5 +227,18 @@ namespace WebApplication1.Controllers
             ViewBag.Medicine = new SelectList(db.Medicines, " MedicineID", "MedidineName");
             return View();
         }
+
+        public JsonResult ExisCenter(string name)
+        {
+            var aCentre = db.Centres.FirstOrDefault(x=>x.Name==name);
+            if(aCentre !=null)
+            {
+                return Json(false, JsonRequestBehavior.AllowGet);
+            }
+            else
+              {
+                return Json(true, JsonRequestBehavior.AllowGet);
+              }
+        }
     }
 }
